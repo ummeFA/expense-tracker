@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-r from-zinc-200 grid content-center place-items-center font-semibold text-3xl py-8 ">
+    <header class="py-12 text-4xl font-bold" >Track Your Expense Here!</header>
+
+    <!-- input section -->
+    <section class="grid grid-cols-3 gap-4 bg-cyan-900 p-12 py-12 rounded shadow-2xl" >
+        <div class="col-span-3 text-center text-zinc-50 text-3xl font-semibold ">Enter your monthly income <br> <input type="text" name="" id="total-income" class="text-black rounded p-4"></div>
+        <div class="bg-red-200 font-semibold p-8 rounded">House Rent<br> <input type="text" name="" id="house-rent" class="pl-4 rounded"></div>
+        <div class="bg-orange-100 font-semibold p-8 rounded">Food<br> <input type="text" name="" id="food-cost" class="pl-4 rounded"></div>
+        <div class="bg-lime-200 font-semibold p-8 rounded">Bus Fare<br> <input type="text" name="" id="bus-fare" class="pl-4 rounded"></div>
+        <button id="calculate-btn" class="btn btn-primary bg-cyan-300 rounded font-semibold py-4" onclick="calculateExpense()">Calculate Expense</button>
+        <div class="bg-yellow-200 rounded place-items-center">
+            <p class="text-black inline">Your expense is:</p>
+            <output id="output"class="text-black grid-col-1">                         
+            </output>
+        </div>
+    </section>
+    <script src="js/event.js"></script>
+</body>
+</html>
